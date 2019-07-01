@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--<androidx.constraintlayout.widget.Guideline-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:id="@+id/cc"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintGuide_percent=".1"/>-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/empty"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".1"
+        android:hint="User ID"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".2"
+        android:hint="Full Name"
+        />
+
+    <!--<androidx.constraintlayout.widget.Guideline-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:id="@+id/cct1"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".30"/>-->
+
+    <!--<androidx.constraintlayout.widget.Guideline-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:id="@+id/cct2"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".45"/>-->
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:id="@+id/password_toggle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".25"
+        android:hint="password"
+        />
+
+    <!--<TextView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/three"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/password_toggle"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintVertical_bias=".3"-->
+        <!--android:hint="number of login attempts"-->
+        <!--/>-->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Login"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
